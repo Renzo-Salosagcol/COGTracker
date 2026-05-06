@@ -1,0 +1,1 @@
+export const COGTrackerServer = process.env.COGTrackerServer || 'http://localhost:3000'

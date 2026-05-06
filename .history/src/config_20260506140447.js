@@ -1,0 +1,1 @@
+export const COG_TRACKER_SERVER = 'http://localhost:3000'

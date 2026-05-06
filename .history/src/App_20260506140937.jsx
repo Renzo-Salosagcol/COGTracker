@@ -5,7 +5,7 @@ import { COG_TRACKER_SERVER } from './config'
 import { useState, useEffect } from 'react'
 
 export default function App() {
-  const [data, setData] = useState("Loading...")
+  const [data, setData] = useState<String>("Loading...")
 
   useEffect(() => {
     // Simulate an API call

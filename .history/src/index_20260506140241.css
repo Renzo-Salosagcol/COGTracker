@@ -16,7 +16,8 @@
     --background: #ffffff;
     --foreground: #000000;
 
-    --primary: #000000;
+    --primary: #ffffff;
+    --secondary: #000000;
   }
 
   /* Dark Theme */
@@ -24,7 +25,8 @@
     --background: #000000;
     --foreground: #ffffff;
 
-    --primary: #ffffff;
+    --primary: #000000;
+    --secondary: #ffffff;
   }
 
   html {

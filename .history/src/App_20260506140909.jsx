@@ -5,7 +5,7 @@ import { COG_TRACKER_SERVER } from './config'
 import { useState, useEffect } from 'react'
 
 export default function App() {
-  const [data, setData] = useState("Loading...")
+  const [data, setData] = useState(null)
 
   useEffect(() => {
     // Simulate an API call
@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <>
-      <h1 className="text-3xl text-primary font-bold underline">{data}</h1>
+      <h1 className="text-3xl text-primary font-bold underline">{data ? data : 'Loading...'}</h1>
       <form>
         <button type="submit" className="bg-background text-primary p-5 rounded-lg cursor-pointer:hover">Click Me To Test</button>
       </form>
