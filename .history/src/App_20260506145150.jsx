@@ -6,11 +6,17 @@ import { COG_TRACKER_SERVER } from './config'
 import { useState, useEffect, React } from 'react'
 
 //Router Imports
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import Error from './pages/Error'
 
 export default function App() {
+   const location = useLocation();
+
+  useEffect(() => {
+    window.HSStaticMethods.autoInit();
+  }, [location.pathname]);
+
   const [data, setData] = useState("Loading...")
 
   useEffect(() => {

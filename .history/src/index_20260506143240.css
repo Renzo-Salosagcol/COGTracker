@@ -6,6 +6,8 @@
 
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+
+  --animate-fade-in: fade-in 1s ease-in forwards;
 }
 
 @layer base {
